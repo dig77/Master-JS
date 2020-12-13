@@ -1,0 +1,23 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    margin:2em 0;
+}
+
+img.is-block {
+    transition: all .3s;
+}
+
+.is-block {
+    display:block;
+}
+
+
+.is-round {
+    border-radius: 100%;
+    transform: rotate(2turn);
+}
