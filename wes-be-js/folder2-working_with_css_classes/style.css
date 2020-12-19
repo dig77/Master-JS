@@ -16,7 +16,6 @@ img.is-block {
     display:block;
 }
 
-
 .is-round {
     border-radius: 100%;
     transform: rotate(2turn);
