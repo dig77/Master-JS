@@ -1,0 +1,17 @@
+.playerCard {
+    margin: 2em;
+    padding: 1em 1.5em;
+    background-color: whitesmoke;
+    border: 2px solid #CACACA;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.playerCard button {
+    padding:10px 20px;
+    background-color: rgb(196, 52, 52);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
