@@ -87,9 +87,11 @@ targetCard4.insertAdjacentHTML('beforebegin', card3)
 cardsWrap.style.marginBottom = '75px'
 // put the div into the DOM just before the wrapper element
 // Bonus, put a delete Button on each card so when you click it, the whole card is removed
-// select all the buttons!
-// make out delete function
-const isButton = document.querySelectorAll('button')
+
+
+
+
+/*
 isButton[0].addEventListener('click', function removeCard() {
     isButton[0].parentElement.remove()
 })
@@ -102,7 +104,20 @@ isButton[2].addEventListener('click', function removeCard() {
 isButton[3].addEventListener('click', function removeCard() {
     isButton[3].parentElement.remove()
 })
-// loop over them and attach a listener
+
 for (let i = 0; i < 4; i++) {
     console.log(isButton[i])
 }
+*/
+
+// A MORE CLEAN WAY TO DO IT
+
+// select all the buttons!
+const isButton = document.querySelectorAll('button')
+// make out delete function
+function deleteCard(event) {
+    const clickedBt = event.currentTarget
+    clickedBt.closest('.playerCard').remove()
+}
+// loop over them and attach a listener
+isButton.forEach(bt => bt.addEventListener('click', deleteCard))

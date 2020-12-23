@@ -1,10 +1,18 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 .playerCard {
     margin: 2em;
     padding: 1em 1.5em;
     background-color: whitesmoke;
     border: 2px solid #CACACA;
     border-radius: 10px;
-    width: 40%;
+}
+
+.playerCard h2 {
+    margin-top: 0;
 }
 
 .playerCard button {
